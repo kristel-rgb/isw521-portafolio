@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop HTML Semántico</title>
+    <link rel="stylesheet" href="actividad2.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <h1>Mi sitio web</h1>
+
+        <nav class="menu">
+            <a href="#">Inicio</a>
+            <a href="#">Cursos</a>
+            <a href="#">Contacto</a>
+        </nav>
+
+        <form class="busqueda">
+            <label for="buscar">Buscar:</label>
+            <input type="search" id="buscar" name="buscar" placeholder="Buscar contenido">
+            <button type="submit">Buscar</button>
+        </form>
+    </header>
+
+    <section class="layout">
+
+        <aside class="filtros">
+            <h2>Filtros</h2>
+
+            <form>
+                <label>
+                    <input type="checkbox" name="categoria" value="html">
+                    HTML
+                </label>
+
+                <label>
+                    <input type="checkbox" name="categoria" value="css">
+                    CSS
+                </label>
+
+                <label>
+                    <input type="checkbox" name="categoria" value="javascript">
+                    JavaScript
+                </label>
+            </form>
+        </aside>
+
+        <main class="contenido-principal">
+            <article>
+                <h2>Programación en Ambiente Web I</h2>
+
+                <p>
+                    En este curso se aprenden las bases para crear páginas web utilizando
+                    HTML, CSS y buenas prácticas de estructura semántica.
+                </p>
+
+                <p>
+                    El objetivo principal es comprender cómo organizar correctamente el
+                    contenido de una página para que sea clara, accesible y fácil de mantener.
+                </p>
+            </article>
+        </main>
+
+        <aside class="relacionado">
+            <h2>Relacionado</h2>
+
+            <article>
+                <h3>HTML Semántico</h3>
+                <p>Uso correcto de etiquetas como header, nav, main, article, aside y footer.</p>
+            </article>
+
+            <article>
+                <h3>CSS Básico</h3>
+                <p>Aplicación de colores, tamaños, márgenes, bordes y distribución visual.</p>
+            </article>
+        </aside>
+
+    </section>
+
+    <footer class="pie">
+        <p>&copy; UTN 2026 - Workshop HTML Semántico</p>
+    </footer>
+
+</body>
+</html>

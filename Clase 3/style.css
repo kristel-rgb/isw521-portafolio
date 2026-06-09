@@ -1,0 +1,89 @@
+/* Estilo general de toda la página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #8cd1b9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Caja principal del CV */
+.contenedor {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Parte superior del CV */
+.encabezado {
+    text-align: center;
+    background-color: #4fb1c3;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.encabezado h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.carrera {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Información de contacto */
+.contacto {
+    margin-top: 20px;
+}
+
+.contacto p {
+    margin: 6px 0;
+}
+
+/* Secciones del CV */
+.seccion {
+    margin-top: 30px;
+}
+
+.seccion h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+}
+
+.seccion p {
+    line-height: 1.6;
+}
+
+/* Lista de habilidades */
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Diseño responsive para celular */
+@media (max-width: 600px) {
+    .contenedor {
+        width: 90%;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .encabezado h1 {
+        font-size: 24px;
+    }
+
+    .carrera {
+        font-size: 16px;
+    }
+}

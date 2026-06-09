@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #ffffff;
+}
+
+.encabezado {
+    background-color: #213f70;
+    padding: 20px;
+    border: 2px solid white;
+    text-align: center;
+}
+
+.encabezado h1 {
+    margin: 0 0 15px 0;
+}
+
+.menu {
+    margin-bottom: 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+.busqueda {
+    margin-top: 10px;
+}
+
+.busqueda label {
+    margin-right: 8px;
+}
+
+.busqueda input {
+    padding: 7px;
+    border: none;
+    border-radius: 4px;
+}
+
+.busqueda button {
+    padding: 7px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffc400;
+    color: #0b2d5c;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    min-height: 320px;
+}
+
+.filtros {
+    background-color: #4472c4;
+    padding: 25px;
+    border: 2px solid white;
+}
+
+.filtros h2 {
+    text-align: center;
+}
+
+.filtros form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contenido-principal {
+    background-color: #5b9bd5;
+    padding: 35px;
+    border: 2px solid white;
+    text-align: center;
+}
+
+.contenido-principal article {
+    max-width: 500px;
+    margin: 60px auto 0 auto;
+}
+
+.contenido-principal h2 {
+    margin-bottom: 20px;
+}
+
+.contenido-principal p {
+    line-height: 1.6;
+}
+
+.relacionado {
+    background-color: #ed7d31;
+    padding: 25px;
+    border: 2px solid white;
+}
+
+.relacionado h2 {
+    text-align: center;
+}
+
+.relacionado article {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.relacionado h3 {
+    margin-top: 0;
+}
+
+.pie {
+    background-color: #172b5c;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid white;
+}
+
+.pie p {
+    margin: 0;
+}
