@@ -6,7 +6,6 @@
     --fondo: #f4f6fb;
     --blanco: #ffffff;
     --azul: #206e95;
-    --azul-oscuro: #23b7af;
     --texto: #1f2937;
     --gris: #6b7280;
     --borde: #d1d5db;
@@ -70,8 +69,8 @@ textarea:focus {
     margin: auto;
     padding: 18px 24px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 16px;
 }
 
@@ -82,7 +81,8 @@ textarea:focus {
 
 .navbar__menu {
     display: flex;
-    gap: 18px;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .navbar__menu a {
@@ -110,9 +110,9 @@ textarea:focus {
 .hero {
     max-width: 1100px;
     margin: auto;
-    padding: 70px 24px;
+    padding: 50px 16px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
     gap: 30px;
     align-items: center;
 }
@@ -126,7 +126,7 @@ textarea:focus {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 2.2rem;
     line-height: 1.1;
     margin-bottom: 18px;
 }
@@ -138,8 +138,8 @@ textarea:focus {
 
 .hero__actions {
     display: flex;
+    flex-direction: column;
     gap: 12px;
-    flex-wrap: wrap;
 }
 
 .hero__card {
@@ -159,7 +159,7 @@ textarea:focus {
 }
 
 .hero__card li {
-    background-color: #dbeafe;
+    background-color: #84a7d3;
     color: var(--azul-oscuro);
     padding: 8px;
     border-radius: 8px;
@@ -172,9 +172,11 @@ textarea:focus {
 
 .button {
     display: inline-block;
+    width: 100%;
     padding: 10px 16px;
     border-radius: 20px;
     font-weight: bold;
+    text-align: center;
 }
 
 .button--primary {
@@ -194,7 +196,7 @@ textarea:focus {
 .section {
     max-width: 1100px;
     margin: auto;
-    padding: 55px 24px;
+    padding: 50px 16px;
 }
 
 .section__header {
@@ -228,14 +230,14 @@ textarea:focus {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 18px;
 }
 
 .skill-card h3 {
     margin-bottom: 10px;
-    color: var(--azul-oscuro);
 }
+
 
 /* ==============================
    Proyectos con Flexbox
@@ -243,6 +245,7 @@ textarea:focus {
 
 .projects-container {
     display: flex;
+    flex-direction: column;
     gap: 18px;
 }
 
@@ -341,59 +344,64 @@ body.dark-mode .form-group textarea {
    Responsive - Tablet
 ============================== */
 
-@media (max-width: 900px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
+@media (min-width: 700px) {
     .navbar__menu {
+        flex-direction: row;
         flex-wrap: wrap;
+        gap: 18px;
     }
 
     .hero {
-        grid-template-columns: 1fr;
+        padding: 60px 24px;
+    }
+
+    .hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .hero__actions {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .button {
+        width: auto;
+    }
+
+    .section {
+        padding: 55px 24px;
     }
 
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .projects-container {
-        flex-direction: column;
-    }
 }
 
 /* ==============================
-   Responsive - Celular
+   Responsive - Escritorio
 ============================== */
 
-@media (max-width: 600px) {
-    .navbar__menu {
-        flex-direction: column;
-        gap: 10px;
+@media (min-width: 1000px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    .hero,
-    .section {
-        padding-left: 16px;
-        padding-right: 16px;
+    .hero {
+        grid-template-columns: 2fr 1fr;
+        padding: 70px 24px;
     }
 
     .hero h1 {
-        font-size: 2.2rem;
-    }
-
-    .hero__actions {
-        flex-direction: column;
-    }
-
-    .button {
-        width: 100%;
-        text-align: center;
+        font-size: 3rem;
     }
 
     .skills-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .projects-container {
+        flex-direction: row;
     }
 }

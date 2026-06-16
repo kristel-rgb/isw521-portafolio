@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Configuración básica del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page Responsiva | Kristel Bravo Rivera</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Enlace al archivo externo de estilos CSS -->
+    <link rel="stylesheet" href="css/StylePorta.css">
 </head>
 <body>
 
+    <!-- Encabezado principal del sitio -->
     <header class="site-header">
         <nav class="navbar" aria-label="Navegación principal">
             <a href="#inicio" class="navbar__logo">Kristel Bravo Rivera</a>
 
+            <!-- Menú de navegación interna -->
             <ul class="navbar__menu">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre-mi">Sobre mí</a></li>
@@ -21,6 +25,7 @@
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
 
+            <!-- Botón que será controlado con JavaScript para cambiar el tema -->
             <button 
                 class="navbar__button" 
                 id="themeToggle" 
@@ -31,8 +36,10 @@
         </nav>
     </header>
 
+    <!-- Contenido principal de la página -->
     <main>
 
+        <!-- Sección inicial de presentación -->
         <section class="hero" id="inicio">
             <div class="hero__content">
                 <p class="hero__tag">ESTUDIANTE DE INGENIERÍA DE SOFTWARE</p>
@@ -45,12 +52,14 @@
                     tecnológicas mediante proyectos prácticos.
                 </p>
 
+                <!-- Enlaces de acción hacia secciones internas -->
                 <div class="hero__actions">
                     <a href="#proyectos" class="button button--primary">Ver proyectos</a>
                     <a href="#contacto" class="button button--secondary">Contactarme</a>
                 </div>
             </div>
 
+            <!-- Información complementaria al contenido principal del hero -->
             <aside class="hero__card" aria-label="Resumen profesional">
                 <h2>Perfil profesional</h2>
 
@@ -67,6 +76,7 @@
             </aside>
         </section>
 
+        <!-- Sección de información personal y académica -->
         <section class="section" id="sobre-mi">
             <div class="section__header">
                 <p class="section__tag">Sobre mí</p>
@@ -89,6 +99,7 @@
             </article>
         </section>
 
+        <!-- Sección de habilidades organizada en tarjetas -->
         <section class="section" id="habilidades">
             <div class="section__header">
                 <p class="section__tag">Habilidades</p>
@@ -123,6 +134,7 @@
             </div>
         </section>
 
+        <!-- Sección de proyectos académicos -->
         <section class="section" id="proyectos">
             <div class="section__header">
                 <p class="section__tag">Proyectos</p>
@@ -159,12 +171,14 @@
             </div>
         </section>
 
+        <!-- Sección de contacto con información y formulario -->
         <section class="section contact-section" id="contacto">
             <div class="section__header">
                 <p class="section__tag">Contacto</p>
                 <h2>Hablemos sobre software, proyectos u oportunidades</h2>
             </div>
 
+            <!-- Información directa de contacto -->
             <div class="contact-info" aria-label="Información de contacto">
                 <p>
                     <strong>Correo:</strong>
@@ -191,6 +205,7 @@
                 </p>
             </div>
 
+            <!-- Formulario de contacto -->
             <form class="contact-form" id="contactForm" aria-describedby="contactHelp">
                 <p id="contactHelp">
                     Completa el formulario para dejarme un mensaje sobre oportunidades, 
@@ -223,10 +238,12 @@
 
     </main>
 
+    <!-- Pie de página -->
     <footer class="site-footer">
         <p>&copy; 2026 Kristel Bravo Rivera. Landing Page Responsiva para ISW-521.</p>
     </footer>
 
+    <!-- Enlace al archivo externo de JavaScript -->
     <script src="js/script.js"></script>
 </body>
 </html>
