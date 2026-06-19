@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+
+    <!-- Enlace al archivo externo de estilos CSS -->
+    <link rel="stylesheet" href="stylePorta.css">
+</head>
+<body>
+
+    <!-- Encabezado principal del sitio -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Navegación principal">
+            <a href="#inicio" class="navbar__logo">Kristel Bravo Rivera</a>
+
+            <!-- Menú de navegación interna -->
+            <ul class="navbar__menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <!-- Botón que será controlado con JavaScript para cambiar el tema -->
+            <button 
+                class="navbar__button" 
+                id="themeToggle" 
+                type="button" 
+                aria-label="Cambiar entre modo claro y modo oscuro">
+                Modo oscuro
+            </button>
+        </nav>
+    </header>
+
+    <!-- Contenido principal de la página -->
+    <main>
+
+        <!-- Sección inicial de presentación -->
+        <section class="hero" id="inicio">
+    <figure class="hero__profile">
+        <img 
+            src="https://placehold.co/300x300/206e95/ffffff?text=KB" 
+            alt="Avatar de Kristel Bravo Rivera">
+    </figure>
+
+    <div class="hero__content">
+        <p class="hero__tag">ESTUDIANTE DE INGENIERÍA DE SOFTWARE</p>
+
+        <h1>Desarrollo soluciones de software funcionales, organizadas y orientadas al usuario.</h1>
+
+        <p class="hero__text">
+            Soy estudiante de Ingeniería de Software y actualmente fortalezco mis habilidades 
+            en programación, bases de datos, lógica computacional y desarrollo de soluciones 
+            tecnológicas mediante proyectos prácticos.
+        </p>
+
+        <div class="hero__actions">
+            <a href="#proyectos" class="button button--primary">Ver proyectos</a>
+            <a href="#contacto" class="button button--secondary">Contactarme</a>
+        </div>
+
+        <aside class="hero__card" aria-label="Resumen profesional">
+            <h2>Perfil profesional</h2>
+
+            <p>
+                Formación en programación, bases de datos, desarrollo de aplicaciones, 
+                lógica computacional y buenas prácticas para la construcción de software.
+            </p>
+
+            <ul>
+                <li>Programación y lógica</li>
+                <li>Python, Java, JavaScript, C++, C#</li>
+                <li>Bases de datos SQL y NoSQL</li>
+            </ul>
+        </aside>
+    </div>
+</section>
+
+        <!-- Sección de información personal y académica -->
+        <section class="section" id="sobre-mi">
+            <div class="section__header">
+                <p class="section__tag">Sobre mí</p>
+                <h2>Aprendiendo a construir software desde bases sólidas</h2>
+            </div>
+
+            <div class="about">
+                <p>
+                    Me interesa desarrollar soluciones tecnológicas que sean claras,
+                    ordenadas y fáciles de usar. Actualmente estoy fortaleciendo mis conocimientos
+                    en desarrollo web, programación, bases de datos y análisis de requerimientos.
+                </p>
+
+                <p>
+                    Durante mi proceso de aprendizaje he explorado bases de datos relacionales y no relacionales,
+                    fundamentos de programación, lógica, estructuras de datos y creación de aplicaciones. 
+                    Me gusta aprender mediante la práctica, construir proyectos que refuercen mis conocimientos y 
+                    mejorar progresivamente la calidad de mis soluciones.
+                </p>
+            </div>
+        </section>
+
+        <!-- Sección de habilidades organizada en tarjetas -->
+        <section class="section" id="habilidades">
+            <div class="section__header">
+                <p class="section__tag">Habilidades</p>
+                <h2>Áreas de formación</h2>
+            </div>
+
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <h3>Fundamentos de desarrollo web</h3>
+                    <p>
+                        Creación de interfaces web utilizando HTML, CSS y JavaScript, aplicando estructura 
+                        semántica, estilos responsivos y buenas prácticas de diseño.
+                    </p>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Programación</h3>
+                    <p>
+                        Aplicación de lógica de programación, estructuras de control, funciones, 
+                        arreglos, objetos y resolución de problemas mediante código.
+                    </p>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Bases de datos</h3>
+                    <p>
+                        Diseño y manejo de bases de datos relacionales y no relacionales, 
+                        incluyendo consultas, relaciones, organización de información y 
+                        modelado de datos.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección de proyectos académicos -->
+        <section class="section" id="proyectos">
+    <div class="section__header">
+        <p class="section__tag">Proyectos</p>
+        <h2>Proyectos académicos destacados</h2>
+    </div>
+
+    <div class="projects-container">
+        <article class="project-card">
+            <h3>Portafolio personal</h3>
+            <p>
+                Sitio web desarrollado para presentar mi perfil, habilidades, 
+                proyectos y proceso de formación como estudiante de 
+                Ingeniería en Software.
+            </p>
+            <a href="#" class="project-card__link" aria-label="Ver proyecto Portafolio personal">
+                Ver proyecto
+            </a>
+        </article>
+
+        <article class="project-card">
+            <h3>Landing Page Responsiva</h3>
+            <p>
+                Página web creada con HTML, CSS y JavaScript, aplicando 
+                diseño adaptable, estructura semántica y buenas prácticas 
+                de accesibilidad.
+            </p>
+            <a href="#" class="project-card__link" aria-label="Ver proyecto Landing Page Responsiva">
+                Ver proyecto
+            </a>
+        </article>
+
+        <article class="project-card">
+            <h3>Ejercicios de programación</h3>
+            <p>
+                Colección de ejercicios enfocados en lógica de programación, 
+                estructuras de datos, formularios, interfaces, bases de datos 
+                y organización de código.
+            </p>
+            <a href="#" class="project-card__link" aria-label="Ver proyecto Ejercicios de programación">
+                Ver proyecto
+            </a>
+        </article>
+    </div>
+</section>
+
+        <!-- Sección de contacto con información y formulario -->
+        <section class="section contact-section" id="contacto">
+            <div class="section__header">
+                <p class="section__tag">Contacto</p>
+                <h2>Hablemos sobre software, proyectos u oportunidades</h2>
+            </div>
+
+            <!-- Información directa de contacto -->
+            <div class="contact-info">
+                <p>
+                    <strong>Correo:</strong>
+                    <a href="mailto:kyariverab@gmail.com">kyariverab@gmail.com</a>
+                </p>
+
+                <p>
+                    <strong>GitHub:</strong>
+                    <a href="https://github.com/kristel-rgb" target="_blank" rel="noopener noreferrer">
+                        https://github.com/kristel-rgb
+                    </a>
+                </p>
+
+                <p>
+                    <strong>LinkedIn:</strong>
+                    <a href="https://www.linkedin.com/in/kristel-yuridia-bravo-rivera-381795414/" target="_blank" rel="noopener noreferrer">
+                        https://www.linkedin.com/in/kristel-yuridia-bravo-rivera-381795414/
+                    </a>
+                </p>
+            </div>
+
+            <!-- Formulario de contacto -->
+            <form class="contact-form" id="contactForm" aria-describedby="contactHelp">
+                <p id="contactHelp">
+                    Completa el formulario para dejarme un mensaje sobre oportunidades, 
+                    proyectos o comentarios relacionados con mi trabajo.
+                </p>
+
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="Escriba su nombre">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        rows="5" 
+                        placeholder="Escriba su mensaje"></textarea>
+                </div>
+
+                <button type="submit" class="button button--primary">
+                    Enviar mensaje
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Kristel Bravo Rivera. Mi Portafolio.</p>
+    </footer>
+
+    <!-- Enlace al archivo externo de JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
