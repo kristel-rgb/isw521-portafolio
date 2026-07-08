@@ -4,10 +4,10 @@
     <!-- Configuración básica del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page Responsiva | Kristel Bravo Rivera</title>
+    <title>Mi Portafolio</title>
 
     <!-- Enlace al archivo externo de estilos CSS -->
-    <link rel="stylesheet" href="css/StylePorta.css">
+    <link rel="stylesheet" href="Porta.css">
 </head>
 <body>
 
@@ -22,10 +22,11 @@
                 <li><a href="#sobre-mi">Sobre mí</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#ejercicios">Ejercicios JS</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
 
-            <!-- Botón que será controlado con JavaScript para cambiar el tema -->
+            <!-- Botón controlado con JavaScript para cambiar el tema -->
             <button 
                 class="navbar__button" 
                 id="themeToggle" 
@@ -41,6 +42,12 @@
 
         <!-- Sección inicial de presentación -->
         <section class="hero" id="inicio">
+            <figure class="hero__profile">
+                <img 
+                    src="https://placehold.co/300x300/206e95/ffffff?text=KB" 
+                    alt="Avatar de Kristel Bravo Rivera">
+            </figure>
+
             <div class="hero__content">
                 <p class="hero__tag">ESTUDIANTE DE INGENIERÍA DE SOFTWARE</p>
 
@@ -52,28 +59,26 @@
                     tecnológicas mediante proyectos prácticos.
                 </p>
 
-                <!-- Enlaces de acción hacia secciones internas -->
                 <div class="hero__actions">
                     <a href="#proyectos" class="button button--primary">Ver proyectos</a>
                     <a href="#contacto" class="button button--secondary">Contactarme</a>
                 </div>
+
+                <aside class="hero__card" aria-label="Resumen profesional">
+                    <h2>Perfil profesional</h2>
+
+                    <p>
+                        Formación en programación, bases de datos, desarrollo de aplicaciones, 
+                        lógica computacional y buenas prácticas para la construcción de software.
+                    </p>
+
+                    <ul>
+                        <li>Programación y lógica</li>
+                        <li>Python, Java, JavaScript, C++, C#</li>
+                        <li>Bases de datos SQL y NoSQL</li>
+                    </ul>
+                </aside>
             </div>
-
-            <!-- Información complementaria al contenido principal del hero -->
-            <aside class="hero__card" aria-label="Resumen profesional">
-                <h2>Perfil profesional</h2>
-
-                <p>
-                    Formación en programación, bases de datos, desarrollo de aplicaciones, 
-                    lógica computacional y buenas prácticas para la construcción de software.
-                </p>
-
-                <ul>
-                    <li>Programación y lógica</li>
-                    <li>Python, Java, JavaScript, C++, C#</li>
-                    <li>Bases de datos SQL y NoSQL</li>
-                </ul>
-            </aside>
         </section>
 
         <!-- Sección de información personal y académica -->
@@ -149,26 +154,60 @@
                         proyectos y proceso de formación como estudiante de 
                         Ingeniería en Software.
                     </p>
+                    <a href="#" class="project-card__link" aria-label="Ver proyecto Portafolio personal">
+                        Ver proyecto
+                    </a>
                 </article>
 
                 <article class="project-card">
                     <h3>Landing Page Responsiva</h3>
                     <p>
                         Página web creada con HTML, CSS y JavaScript, aplicando 
-                        diseño adaptable, estructura semántica y 
-                        buenas prácticas de accesibilidad.
+                        diseño adaptable, estructura semántica y buenas prácticas 
+                        de accesibilidad.
                     </p>
+                    <a href="#" class="project-card__link" aria-label="Ver proyecto Landing Page Responsiva">
+                        Ver proyecto
+                    </a>
                 </article>
 
                 <article class="project-card">
                     <h3>Ejercicios de programación</h3>
                     <p>
                         Colección de ejercicios enfocados en lógica de programación, 
-                        estructuras de datos, formularios, interfaces, bases de datos y 
-                        organización de código.
+                        estructuras de datos, formularios, interfaces, bases de datos 
+                        y organización de código.
                     </p>
+                    <a href="#ejercicios" class="project-card__link" aria-label="Ver ejercicios de programación">
+                        Ver ejercicios
+                    </a>
                 </article>
             </div>
+        </section>
+
+        <!-- Sección de ejercicios de JavaScript -->
+        <section class="section" id="ejercicios">
+            <div class="section__header">
+                <p class="section__tag">Práctica</p>
+                <h2>Ejercicios de JavaScript</h2>
+            </div>
+
+            <article class="ejercicio">
+                <h3>1. FizzBuzz clásico</h3>
+                <p>
+                    Imprime números del 1 al 30. Los múltiplos de 3 muestran Fizz,
+                    los múltiplos de 5 muestran Buzz y los múltiplos de ambos muestran FizzBuzz.
+                </p>
+                <pre id="resultadoFizzBuzz"></pre>
+            </article>
+
+            <article class="ejercicio">
+                <h3>3. Suma de un arreglo</h3>
+                <p>
+                    Dado el arreglo [4, 8, 15, 16, 23, 42], se calcula la suma total usando un ciclo for...of.
+                </p>
+                <pre id="resultadoSuma"></pre>
+            </article>
         </section>
 
         <!-- Sección de contacto con información y formulario -->
@@ -182,12 +221,7 @@
             <div class="contact-info">
                 <p>
                     <strong>Correo:</strong>
-                    kyariverab@gmail.com
-                </p>
-
-                <p>
-                    <strong>Teléfono:</strong>
-                    +506 6325-8354
+                    <a href="mailto:kyariverab@gmail.com">kyariverab@gmail.com</a>
                 </p>
 
                 <p>
@@ -240,10 +274,10 @@
 
     <!-- Pie de página -->
     <footer class="site-footer">
-        <p>&copy; 2026 Kristel Bravo Rivera. Landing Page Responsiva para ISW-521.</p>
+        <p>&copy; 2026 Kristel Bravo Rivera. Mi Portafolio.</p>
     </footer>
 
     <!-- Enlace al archivo externo de JavaScript -->
-    <script src="js/script.js"></script>
+    <script src="Porta.js"></script>
 </body>
 </html>
